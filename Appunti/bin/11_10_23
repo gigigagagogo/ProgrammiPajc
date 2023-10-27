@@ -1,0 +1,13 @@
+-MVC=Model(Classe utilizza per gestire le operazioni che deve fare il nostro programma.E' l'applicazione. 
+Non ci deve essere legame tra Model e View)-View(Parte grafica con cui interagisce l'utente.E' la rappresentazione del dato.)-Controller(Fa dialogare i diversi mondi.Fa da tramite tra View e Model)
+
+Model non deve parlare con View
+Controller parla con View e Model
+//Es. non posso creare una istanza dentro view ti tipo Controller e poi invocare dalla classe View un metodo di Controller
+Model e View non devono parlare direttamente con Controller
+
+Outlet punto di comunicazione tra mondo logico e mondo gra
+
+
+
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;it.unibs.fp.pajc.asciidump.IOUtul.java&apos; to &apos;IOUtil.java&apos;&#x0D;&#x0A;- Original project: &apos;AsciiDump&apos;&#x0D;&#x0A;- Original element: &apos;it.unibs.fp.pajc.asciidump.IOUtul.java&apos;&#x0D;&#x0A;- Renamed element: &apos;it.unibs.fp.pajc.asciidump.IOUtil.java&apos;" description="Rename compilation unit &apos;IOUtul.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;it.unibs.fp.pajc.asciidump{IOUtul.java" name="IOUtil.java" references="false" stamp="1695790337159" version="1.0"/>
+</session>

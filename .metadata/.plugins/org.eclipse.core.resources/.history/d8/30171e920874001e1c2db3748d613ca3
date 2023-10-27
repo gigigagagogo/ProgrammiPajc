@@ -1,0 +1,10 @@
+package it.unibs.pajc;
+
+public class PrimiApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

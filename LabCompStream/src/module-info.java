@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author rober
+ *
+ */
+module LabCompStream {
+}

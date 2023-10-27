@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;MyTask.java&apos; to &apos;LabExecutorService/src/it.unibs.pajc&apos;&#x0D;&#x0A;- Original project: &apos;Appunti&apos;&#x0D;&#x0A;- Destination element: &apos;LabExecutorService/src/it.unibs.pajc&apos;&#x0D;&#x0A;- Original element: &apos;it.unibs.fp.pajc.MyTask.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="=LabExecutorService/src&lt;it.unibs.pajc" element1="/src&lt;it.unibs.fp.pajc{MyTask.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1698223144757" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,7 @@
+Thread = Ogni processo è abbinato ad un Thread(unità computazionale). E' un qualcosa che si preoccupa di fare funzionare il nostro processo 
+Quando vogliamo rendere il nostro programma parallelo creiamo molti Thread per far lavorare al meglio i processi.Ogni Thread può lavorare su funzioni diverse.
+Sono importanti. Nel mondo reale i programmi sono solitamente multi-thread perche piu facili da progettare.
+Runnable(interfaccia particolare(non prendere niente in input e non restituisce niente)).
+Thread è un oggetto. Vengono avviati con un comando particolare
+
+

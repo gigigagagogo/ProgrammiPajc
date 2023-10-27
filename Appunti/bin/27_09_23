@@ -1,0 +1,9 @@
+27/09/23
+
+Le classi anonime sono utile quando non dobbiamo creare molte volte l'istanza di quel oggetto
+Quando dichiaro una classe (anonima) la chiusura è con il ; dopo la }
+Guarda video polimorfismo!!!
+Classi anonime le uso per scrivere comportamenti specifici
+Se non modifico il valore di una variabile il compilatore la vede come final
+Lambda expression = Si possono usare solo quando la classe ha un solo metodo TipoOggetto nome = (a,b) (parametri) - > a+b ( valore ritornato) 
+Guarda video albero binario!!!

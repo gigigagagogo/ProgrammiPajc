@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<commands>
+	<addCategory
+		id="category_1697019017519"
+		name="Custom"
+		description="Container for custom components"
+		visible="true"
+		open="true"/>
+	<addComponent
+		id="custom_1697019017519"
+		name="PnlDueBottoni"
+		description="Creates it.unibs.fp.pajc.PnlDueBottoni component."
+		visible="true"
+		class="it.unibs.fp.pajc.PnlDueBottoni"
+		category="category_1697019017519"/>
+	<addComponent
+		id="custom_1697123734966"
+		name="PnlDigits"
+		description="Creates it.unibs.pajcg.PnlDigits component."
+		visible="true"
+		class="it.unibs.pajcg.PnlDigits"
+		category="category_1697019017519"/>
+	<addComponent
+		id="custom_1697123762204"
+		name="PnlDigits"
+		description="Creates it.unibs.pajcg.PnlDigits component."
+		visible="true"
+		class="it.unibs.pajcg.PnlDigits"
+		category="category_1697019017519"/>
+	<addComponent
+		id="custom_1697624268178"
+		name="PnlGraphics"
+		description="Creates it.unibs.fp.pajc.PnlGraphics component."
+		visible="true"
+		class="it.unibs.fp.pajc.PnlGraphics"
+		category="category_1697019017519"/>
+	<addComponent
+		id="custom_1697718629179"
+		name="PanelDraw"
+		description="Creates it.unibf.pajc.PanelDraw component."
+		visible="true"
+		class="it.unibf.pajc.PanelDraw"
+		category="category_1697019017519"/>
+	<addComponent
+		id="custom_1697727870956"
+		name="PnlAnim"
+		description="Creates it.unibs.pahc.PnlAnim component."
+		visible="true"
+		class="it.unibs.pahc.PnlAnim"
+		category="category_1697019017519"/>
+	<addComponent
+		id="custom_1697727886439"
+		name="PnlAnim"
+		description="Creates it.unibs.pahc.PnlAnim component."
+		visible="true"
+		class="it.unibs.pahc.PnlAnim"
+		category="category_1697019017519"/>
+	<addComponent
+		id="custom_1697727891669"
+		name="PnlAnim"
+		description="Creates it.unibs.pahc.PnlAnim component."
+		visible="true"
+		class="it.unibs.pahc.PnlAnim"
+		category="category_1697019017519"/>
+	<addComponent
+		id="custom_1697728611774"
+		name="PnlAnim"
+		description="Creates it.unibs.pahc.PnlAnim component."
+		visible="true"
+		class="it.unibs.pahc.PnlAnim"
+		category="category_1697019017519"/>
+	<addComponent
+		id="custom_1698052257052"
+		name="PnlBoards"
+		description="Creates it.unibs.pajc.PnlBoards component."
+		visible="true"
+		class="it.unibs.pajc.PnlBoards"
+		category="category_1697019017519"/>
+	<addComponent
+		id="custom_1698331285712"
+		name="PnlPlotFunction"
+		description="Creates it.unibs.pajc.PnlPlotFunction component."
+		visible="true"
+		class="it.unibs.pajc.PnlPlotFunction"
+		category="category_1697019017519"/>
+</commands>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;CalcGraf/src/it.unibs.pajc.model&apos;&#x0D;&#x0A;- Original project: &apos;Calccij&apos;&#x0D;&#x0A;- Destination element: &apos;CalcGraf/src/it.unibs.pajc.model&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     it.unibs.pajc.calc.CalcModel.java&#x0D;&#x0A;     it.unibs.pajc.calc.OperatoreBinario.java" description="Copy compilation units" destination="=CalcGraf/src&lt;it.unibs.pajc.model" element1="/src&lt;it.unibs.pajc.calc{CalcModel.java" element2="/src&lt;it.unibs.pajc.calc{OperatoreBinario.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1697123458634" units="2" version="1.0"/>
+</session>
