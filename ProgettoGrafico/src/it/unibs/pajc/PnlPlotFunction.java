@@ -22,12 +22,17 @@ public class PnlPlotFunction extends JPanel {
 	
 	protected void paintComponent(Graphics g) {
 		super.paintComponent(g);
+		Graphics2D g2= (Graphics2D) g;
+		g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 		Path2D p2d= new Path2D.Double();
 		int w=getWidth();
 		int h=getHeight();
-		p2d.moveTo(50., 50.);
-		p2d.lineTo(5., 100.);
-		//Area area=new Area(p2d);
+		g2.translate(0, h/2);
+		g2.setStroke(new BasicStroke(2f));
+		g2.drawLine(0, 0, w, 0);		
+		for(double x=0; x<Math.PI*2; x+= 0.0005) {
+			
+		}
 		
 	}
 	
@@ -38,6 +43,7 @@ public class PnlPlotFunction extends JPanel {
 		//Path2D path=new Path2D();
 		int w=getWidth();
 		int h=getHeight();
+		
 		/*
 		g2.fillOval(-50,-50,100,100);
 		//Metto il . dopo il 2 perche il translate lavora con floating point
@@ -51,6 +57,7 @@ public class PnlPlotFunction extends JPanel {
 		g2.setColor(Color.magenta);
 		g2.fillOval(-500,-500,1000,1000);
 		*/
+		
 		g2.fillOval(0, 0, 50, 50);
 		g2.setColor(Color.yellow);
 		g2.fillOval(0, 0, -50, -50);
