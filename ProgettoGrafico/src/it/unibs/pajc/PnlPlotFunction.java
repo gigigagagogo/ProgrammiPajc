@@ -10,7 +10,6 @@ import java.awt.geom.Path2D;
 import javax.swing.JPanel;
 
 public class PnlPlotFunction extends JPanel {
-
 	private static final long serialVersionUID = 1L;
 
 	/**
@@ -19,8 +18,7 @@ public class PnlPlotFunction extends JPanel {
 	public PnlPlotFunction(){
 
 	}
-	
-	protected void paintComponent(Graphics g) {
+	protected void paintComponent_(Graphics g) {
 		super.paintComponent(g);
 		Graphics2D g2= (Graphics2D) g;
 		g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
@@ -35,7 +33,6 @@ public class PnlPlotFunction extends JPanel {
 		}
 		
 	}
-	
 	protected void paintComponent__(Graphics g) {
 		super.paintComponent(g);
 		Graphics2D g2= (Graphics2D) g;
@@ -66,7 +63,7 @@ public class PnlPlotFunction extends JPanel {
 	/*
 	 * rifare questo algoritmo in modo che non devi convertire tu a mano tutte le coordinate ma ci deve pensare il sistema
 	 */
-	protected void paintComponent_(Graphics g) {
+	protected void paintComponent(Graphics g) {
 		super.paintComponent(g);
 		Graphics2D g2= (Graphics2D) g;
 		g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,RenderingHints.VALUE_ANTIALIAS_ON);
