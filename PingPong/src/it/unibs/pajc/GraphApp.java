@@ -5,6 +5,9 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import java.awt.BorderLayout;
 
+import javax.swing.BorderFactory;
+import javax.swing.JButton;
+
 public class GraphApp {
 
 	private JFrame frame;
@@ -42,6 +45,17 @@ public class GraphApp {
 		
 		PnlBoards pnlBoards = new PnlBoards();
 		frame.getContentPane().add(pnlBoards, BorderLayout.CENTER);
+		pnlBoards.setLayout(null);
+		
+		JButton btnStart = new JButton("Start");
+		btnStart.setBounds(170, 238, 89, 23);
+		pnlBoards.add(btnStart);
+		btnStart.addActionListener((e) -> {
+			pnlBoards.setPressed(true);
+			btnStart.setEnabled(false);
+			btnStart.setVisible(false);
+			});
+		
 	}
 
 }
