@@ -20,20 +20,14 @@ public class PnlBoards extends JPanel implements MouseMotionListener, MouseListe
 	private boolean pressed=false;
 	//private int w=getWidth();
 	//private int h=getHeight();
-	private final double speedBall=0.1;
+	private double speedBall=0.01;
 	private double xball=x;
-	private double yball=getHeight()/60;
 	private Color lightBlue = new Color(173, 216, 230, 76);  // 30% di opacità
 	
 	public PnlBoards() {
 		addMouseMotionListener(this);
 		
-		Timer timer=new Timer(10, (e) -> {
-			if(pressed) {
-				updatePositionBall();
-				repaint();
-			}
-		});
+		
 	}
 	
 	protected void paintComponent(Graphics g) {
@@ -43,9 +37,9 @@ public class PnlBoards extends JPanel implements MouseMotionListener, MouseListe
 		drawBound(g2);
 		drawBoard(g2);
 		if(pressed) {	
-			updatePositionBall();
 			drawBallUpdate(g2);
 		}else {
+			System.out.println("prova");
 			drawBallStart(g2);
 		}
 		//repaint();
@@ -78,28 +72,21 @@ public class PnlBoards extends JPanel implements MouseMotionListener, MouseListe
 	
 	public void drawBallStart(Graphics2D g) {
 		g.setColor(Color.orange);
-		g.fillOval(x+10, getHeight()-60, 20, 20);
+		g.fillOval(x+10, updatePositionBall(), 20, 20);
 		
 	}
 	
-	public void updatePositionBall() {
-		if(yball==0) {
-			yball=0;
-		}else if(yball==getHeight()) {
-            JOptionPane.showMessageDialog(null, "Hai perso!", "Avviso", JOptionPane.INFORMATION_MESSAGE);        
-        }else if(yball<=getHeight()-60) {
-        	yball-=speedBall;
-        }
-        
-        
-        repaint();
+	public int updatePositionBall() {
+		int yballIniziale=getHeight()-60;
+		yballIniziale += speedBall;
+		return yballIniziale;
         
 	}
 	
 	public void drawBallUpdate(Graphics2D g) {
 		g.setColor(Color.orange);
-        g.fillOval((int) getWidth()/2, (int) yball, 20, 20);
-        //repaint();
+        g.fillOval((int) getWidth()/2, getHeight()-60, 20, 20);
+        repaint();
 	}
 	
 	@Override
