@@ -64,7 +64,9 @@ public class PnlForceField extends JPanel  implements MouseMotionListener {
 		
 		g2.fill(t.createTransformedShape(path2d));
 	}
-
+	
+	
+	
 	@Override
 	public void mouseDragged(MouseEvent e) {
 		// TODO Auto-generated method stub

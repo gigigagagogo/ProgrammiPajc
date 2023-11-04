@@ -15,20 +15,49 @@ import java.util.function.Function;
 
 import javax.management.modelmbean.ModelMBean;
 import javax.swing.JPanel;
+import javax.swing.Timer;
 
 public class PnlPlotFunction extends JPanel implements MouseMotionListener {
 	
 	private double xmouse;
 	private double ymouse;
+	private double ang;
 	
 	public PnlPlotFunction() {
 		addMouseMotionListener(this);
+		Timer t= new Timer(100, (e) -> updateAng());
 	}
 
-	private static final long serialVersionUID = 1L;
+	public void updateAng() {
+		ang += 0.05;
+		repaint();
+	}
 	
+	protected void paintComponent(Graphics g) {
+		super.paintComponent(g);
+		Graphics2D g2= (Graphics2D) g;
+		g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+		
+		int w=getWidth();
+		int h=getHeight();
+		
+		fillSquare(g2, w, h, Math.toRadians(ang));
+		
+	}
 	
-	
+	protected void fillSquare(Graphics2D g2,int w,int h, double ang) {
+		Path2D p= new Path2D.Double();
+		p.moveTo((w/2)-20, (h/2)-20);
+		p.lineTo((w/2)+20, (h/2)-20);
+		p.lineTo((w/2)+20, (h/2)+20);
+		p.lineTo((w/2)-20, (h/2)+20);
+		p.closePath();
+		
+		AffineTransform t = new AffineTransform();
+		t.rotate(ang);
+		
+		g2.fill(t.createTransformedShape(p));
+	}
 	
 	protected void paintComponent__(Graphics g) {
 		super.paintComponent(g);
@@ -138,7 +167,7 @@ public class PnlPlotFunction extends JPanel implements MouseMotionListener {
 
 	@Override
 	public void mouseMoved(MouseEvent e) {
-		System.out.printf("%d", e.getX());
+		//System.out.printf("%d", e.getX());
 		xmouse=e.getX();
 		ymouse=e.getY();
 		repaint();
