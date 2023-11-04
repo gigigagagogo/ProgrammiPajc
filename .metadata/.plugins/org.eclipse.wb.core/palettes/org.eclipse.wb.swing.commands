@@ -83,4 +83,11 @@
 		visible="true"
 		class="it.unibs.pajc.PnlPlotFunction"
 		category="category_1697019017519"/>
+	<addComponent
+		id="custom_1698957414776"
+		name="Pnl"
+		description="Creates it.unibs.pajc.Pnl component."
+		visible="true"
+		class="it.unibs.pajc.Pnl"
+		category="category_1697019017519"/>
 </commands>

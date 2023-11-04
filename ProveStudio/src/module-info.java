@@ -6,4 +6,5 @@
  *
  */
 module ProveStudio {
+	requires java.desktop;
 }
