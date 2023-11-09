@@ -1,0 +1,4 @@
+Telnet è un tool a riga di comando che prende le righe di testo che scriviamo noi e le trasmette 
+come payload al server che siamo connessi
+
+Senza thread a un server ci si puo collegare un solo client 

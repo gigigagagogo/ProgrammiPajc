@@ -90,4 +90,39 @@
 		visible="true"
 		class="it.unibs.pajc.Pnl"
 		category="category_1697019017519"/>
+	<addComponent
+		id="custom_1699537316522"
+		name="PnlMandelbrot"
+		description="Creates it.unibs.pajc.PnlMandelbrot component."
+		visible="true"
+		class="it.unibs.pajc.PnlMandelbrot"
+		category="category_1697019017519"/>
+	<addComponent
+		id="custom_1699542238346"
+		name="PnlMandelbrot"
+		description="Creates it.unibs.pajc.PnlMandelbrot component."
+		visible="true"
+		class="it.unibs.pajc.PnlMandelbrot"
+		category="category_1697019017519"/>
+	<addComponent
+		id="custom_1699542361313"
+		name="PnlMandelbrot"
+		description="Creates it.unibs.pajc.PnlMandelbrot component."
+		visible="true"
+		class="it.unibs.pajc.PnlMandelbrot"
+		category="category_1697019017519"/>
+	<addComponent
+		id="custom_1699542740200"
+		name="PnlMandelbrot"
+		description="Creates it.unibs.pajc.PnlMandelbrot component."
+		visible="true"
+		class="it.unibs.pajc.PnlMandelbrot"
+		category="category_1697019017519"/>
+	<addComponent
+		id="custom_1699542810669"
+		name="PnlMandelbrot"
+		description="Creates it.unibs.pajc.PnlMandelbrot component."
+		visible="true"
+		class="it.unibs.pajc.PnlMandelbrot"
+		category="category_1697019017519"/>
 </commands>
