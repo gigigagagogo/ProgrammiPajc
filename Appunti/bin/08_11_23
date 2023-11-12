@@ -2,3 +2,9 @@ Telnet è un tool a riga di comando che prende le righe di testo che scriviamo n
 come payload al server che siamo connessi
 
 Senza thread a un server ci si puo collegare un solo client 
+
+1.il client manda una richiesta al server
+2.il server (in attesa) riceve la richiesta
+3.il server esegue il servizio richiesto (generando un thread concorrente)
+4.il server manda una risposta ed eventualmente dei dati
+5.il client riceve la risposta ed eventualmente i dat
