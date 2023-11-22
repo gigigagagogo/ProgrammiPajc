@@ -6,46 +6,57 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.lang.Thread;
 
 public class TryServer {
-	static final int port=1234;
+
+	final static int port=1234;
 	
-	
-	
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException{
 		System.out.println("In attesa di un client....");
-		ServerSocket server = new ServerSocket(port);
-	
-		while(true) {
-			Socket client=null;
-			try {
-				
-				client=server.accept();
-				System.out.printf("Si e' appena connesso:%s", client);
-				PrintWriter out = new PrintWriter(client.getOutputStream(), true);
-				BufferedReader in = new BufferedReader(new InputStreamReader(client.getInputStream()));
-				
-				
-				
-			}catch(Exception e) {
-				e.printStackTrace();
-			}
+		/*
+		try(
+			ServerSocket server= new ServerSocket(port);
+			Socket client = server.accept();
+			PrintWriter out = new PrintWriter(client.getOutputStream(), true);
+			BufferedReader in = new BufferedReader(new InputStreamReader(client.getInputStream()));		
+		){
+			System.out.printf("Client connesso: %s al server %s:%d",
+					client.getInetAddress(),server.getInetAddress(),server.getLocalPort());
+			out.print("\n\nBenvenuto\n\n");
+			
+			
+		}catch(IOException e) {
+			e.printStackTrace();
 		}
-	
-	}
-	
-	public void creazioneClient(ServerSocket server) {
-		Runnable task = () -> {
-			try {
-				Socket client = server.accept();
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+		*/
+		
+		ServerSocket server = new ServerSocket(port);
+		try{
+			Socket client= null;
+			while(true) {
+				System.out.printf("Si e' appena connesso il client: %s al server %s:%d", 
+						client.getLocalAddress(),server.getInetAddress(),server.getLocalPort());
+				
+				client= server.accept();
+				/*
+				Runnable task = () -> {
+						PrintWriter out = new PrintWriter(client.getOutputStream(),true);
+						BufferedReader in = new BufferedReader(new InputStreamReader(client.getInputStream()));
+					
+				};
+				*/
+				Thread t = new Thread();
+				
 			}
-		};
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		
+		
+		
 	}
-	
 
 }
 

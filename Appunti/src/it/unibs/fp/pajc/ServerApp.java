@@ -15,12 +15,15 @@ public class ServerApp {
 		int port = 1234;
 		
 		try(
+			//chiedere
 			ServerSocket server = new ServerSocket(port);
 			//Pone il server in uno stato d'attesa aspettando che un client voglia comunicare con lui
 			//accept restituisce a suo volta un socket 
 			Socket client= server.accept();
+			//Con il true il buffer viene automaticamente svuotato e i dati vengono inviati all'output
 			PrintWriter out = new PrintWriter(client.getOutputStream(), true);
 			BufferedReader in = new BufferedReader(new InputStreamReader(client.getInputStream()));
+			
 			
 		){
 			

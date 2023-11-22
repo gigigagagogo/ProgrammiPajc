@@ -3,6 +3,9 @@ package it.unibs.pajc;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JSlider;
+
 import java.awt.BorderLayout;
 
 public class MandelbrotApp {
@@ -40,8 +43,18 @@ public class MandelbrotApp {
 		frame.setBounds(100, 100, 450, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		PnlMandelbrot pnlMandelbrot = new PnlMandelbrot();
+		PnlMandelbrot pnlMandelbrot =  new PnlMandelbrot();
 		frame.getContentPane().add(pnlMandelbrot, BorderLayout.CENTER);
+		
+		JPanel pnlBottom = new JPanel();
+		frame.getContentPane().add(pnlBottom,BorderLayout.SOUTH);
+		
+		JSlider slResolution = new JSlider();
+		slResolution.setMinimum(200);
+		slResolution.setMaximum(2000);
+		pnlBottom.add(slResolution);
+		slResolution.addChangeListener(e -> pnlMandelbrot.setResolution(slResolution.getValue()));
+				
 	}
 
 }
