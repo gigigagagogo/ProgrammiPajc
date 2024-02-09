@@ -5,7 +5,7 @@ package it.unibs.fp.pajc;
 public class TheadApp {
 
 	public static void main(String[] args) {
-		/*
+		
 		System.out.println("Avvio....");
 		MyTask task0= new MyTask("task0",100,10);
 		Thread thread0= new Thread(task0);
@@ -17,7 +17,7 @@ public class TheadApp {
 		task0.run();
 		*/
 		
-		/*
+		
 		//Definire il compito che poi il thread andra ad eseguire
 		System.out.println("Avvio");
 		Runnable task = ()-> {
@@ -35,7 +35,7 @@ public class TheadApp {
 		System.out.println("Fine");
 		task.run();
 		
-		*/
+		
 		
 		
 	}

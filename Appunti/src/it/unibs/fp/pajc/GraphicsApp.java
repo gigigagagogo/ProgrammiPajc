@@ -51,5 +51,6 @@ public class GraphicsApp {
 		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 13));
 		pnlGraphics.add(lblNewLabel, BorderLayout.NORTH);
 	}
-
+	
+	
 }
